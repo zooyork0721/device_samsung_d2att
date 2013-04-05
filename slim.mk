@@ -18,10 +18,6 @@ $(call inherit-product, vendor/slim/config/common_ledflash.mk)
 PRODUCT_COPY_FILES +=  \
     vendor/slim/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
 
-#copy 00check
-PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check
-
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2uc TARGET_DEVICE=d2att BUILD_FINGERPRINT="d2uc-user 4.2.1 J0P40D I747J0P40D release-keys"
 PRIVATE_BUILD_DESC="samsung/d2uc/d2att:4.2.1/J0P40D/I747J0P40D:user/release-keys"
 
